@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu tienda en línea</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header id="inicio">
+        <h1>La Tienda Del Hincha Del Rojo</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a id="botonProductos" href="#productos">Productos</a></li>
+                <li><a id="botonModal" href="#">Carrito</a></li>
+                <li><a id="botonContacto" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+    </section>
+
+    <section id="productos" class="contenedor-productos">
+        <div class="producto">
+            <img src="./fotos/camisetaRoja.jpg" alt="Remera Roja 2023">
+            <h3>Camiseta Roja 2023</h3>
+            <p>CAMISETA DE INDEPENDIENTE PUMA OFICIAL ROJA</p>
+            <p class="precio">$32.500</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./fotos/shortRojo.jpg" alt="Short Rojo 2023 ">
+            <h3>Short Rojo 2023 </h3>
+            <p>SHORT DE INDEPENDIENTE PUMA OFICIAL ROJO</p>
+            <p class="precio">$12.200</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./fotos/camisetaBlanca.webp" alt="Remera Blanca 2023 ">
+            <h3>Camiseta Blanca 2023 </h3>
+            <p>CAMISETA DE INDEPENDIENTE PUMA ALTERNATIVA BLANCA</p>
+            <p class="precio">$25.500</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./fotos/shortBlanco.webp" alt="Short Blanco 2023">
+            <h3>Short Blanco 2023</h3>
+            <p>SHORT DE INDEPENDIENTE PUMA ALTERNATIVO BLANCO</p>
+            <p class="precio">$15.000</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./fotos/camperaRoja.jpg" alt="Campera Roja">
+            <h3>Campera Roja</h3>
+            <p>CAMPERA DE INDEPENDIENTE PUMA TRAINING ROJA</p>
+            <p class="precio">$42.500</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./fotos/buzoNegro.jpg" alt="Buzo Gris">
+            <h3>Buzo Gris</h3>
+            <p>BUZO DE INDEPENDIENTE MEDIO CIERRE PUMA RAIN TOP PRO GRIS</p>
+            <p class="precio">$34.250</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./fotos/camisetaRoja2.jpg" alt="Camiseta Roja 2021">
+            <h3>Camiseta Roja 2021</h3>
+            <p>CAMISETA DE INDEPENDIENTE PUMA OFICIAL ROJA</p>
+            <p class="precio">$15.800</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./fotos/bolso.jpg" alt="Bolso">
+            <h3>Bolso</h3>
+            <p>BOLSO DE INDEPENDIENTE PUMA TEAMFINAL GRIS</p>
+            <p class="precio">$21.000</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./fotos/pelotaNegra.jpg" alt="Pelota Negra">
+            <h3>Pelota Negra</h3>
+            <p>PELOTA DE INDEPENDIENTE DRB NUMERO 5 NEGRA</p>
+            <p class="precio">$9.500</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./fotos/gorraNegra.jpg" alt="Gorra Negra">
+            <h3>Gorra Negra</h3>
+            <p>GORRA DE INDEPENDIENTE PUMA FTBLCULTURE NEGRA</p>
+            <p class="precio">$6.750</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+    </section>
+
+    <!--MODAL CARRITO-->
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h4>CARRITO</h4>
+        </div>
+    </div>
+
+    <!--MODAL CONTACTO-->
+
+    <div id="miModal2" class="modal2">
+        <div class="modal-contenido2">
+            <span class="cerrar2" onclick="cerrarContacto()">&times;</span>
+            <h4>CONTACTO</h4>
+            <H5>TELEFONO: 1166666666</H5>
+            <h5>DIRECCION: Av. Independiete 666</h5>
+            <div class="contenedor-iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.385641558186!2d-58.373910259051186!3d-34.67021526112708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3334b39d33bdd%3A0xdb9a534cc563fa7!2sEstadio%20Libertadores%20de%20Am%C3%A9rica%20-%20Ricardo%20Enrique%20Bochini!5e0!3m2!1ses-419!2sar!4v1688688511288!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Tu Tienda Roja en Línea &copy; 2023. Todos los derechos reservados. Realizada por RG PAGES</p>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

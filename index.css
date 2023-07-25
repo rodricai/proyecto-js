@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    height: 100%;
+}
+header h1 {
+    text-align: center;
+}
+header nav {
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color:#616161;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+li :hover{
+    opacity: 0.5;
+}
+
+.precio{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#banner {
+    background-image: url('./fotos/banner.webp');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.producto {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.producto img {
+    width: 70%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.producto h3 {
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 14px;
+}
+
+.producto button {
+    background-color: red;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #555;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 33.33%; 
+    box-sizing: border-box; 
+}
+
+/*/////////////////////MODALES///////////////////////*/
+
+.modal {
+    display: none; /* Ocultar inicialmente el modal */
+    position: fixed; /* Posición fija para superponer el modal */
+    z-index: 1; /* Colocar el modal en la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permitir desplazamiento si el contenido del modal es largo */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente para resaltar el modal */
+  }
+  
+  .modal-contenido {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrar vertical y horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    
+  }
+  
+  .cerrar:hover,
+  .cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+h4{
+    text-align: center;
+    font-size: xx-large;
+    color: RED;
+}
+h5{
+    text-align: center;
+}
+.contenedor-iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    border: 8px solid red;
+    box-sizing: border-box;
+  }
+  
+  .contenedor-iframe iframe {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+/*//////////////////////////*/
+
+.modal2 {
+    display: none; /* Ocultar inicialmente el modal */
+    position: fixed; /* Posición fija para superponer el modal */
+    z-index: 1; /* Colocar el modal en la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permitir desplazamiento si el contenido del modal es largo */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente para resaltar el modal */
+  }
+  
+  .modal-contenido2 {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrar vertical y horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .cerrar2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .cerrar2:hover,
+  .cerrar2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+/*//////////////////RESPONSIVE///////////////////////*/
+@media screen and (max-width: 768px) {
+    header {
+        padding: 5px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #banner {
+        padding-top: 40px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+}
